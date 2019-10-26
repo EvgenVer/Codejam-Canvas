@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto.ttf") format("truetype");
+}
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    height: 48px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 3px 7px gray;
+}
+
+.nav--icon_nav {
+    display: inline-flex;
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    background-color: white;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    left: 8px;
+    top: 0px;
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    left: 24px;
+    bottom: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+menu {
+    padding: 8px;
+}
+
+main {
+    display: flex;
+    padding: 80px 30px 0px;
+    justify-content: space-between;
+
+}
+
+canvas {
+    background-color: grey;
+}
+
+.panel {
+    box-sizing: border-box;
+    width: 228px;
+    height: 246px;
+    padding: 0px 16px;
+    box-shadow: 0px 2px 4px gray;
+
+}
+
+.colors {
+    position: relative;
+    top: 92px;
+}
+
+li {
+    display: flex;
+    box-sizing: border-box;
+    width: 196px;
+    height: 48px;
+    padding: 2px;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.tools li:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.colors ul:first-child {
+    margin-bottom: 16px;
+}
+
+.tools li span {
+    position: relative;
+    left: 35px;
+}
+
+.tools li:hover {
+    background-color: rgba(163, 159, 159, 0.459);
+    cursor: pointer;
+}
+
+.colors li span {
+    position: relative;
+    left: 18px;
+}
+
+.switcher li span {
+    position: relative;
+    left: 20px;
+}
+
+.switcher li:hover {
+    background-color: rgba(163, 159, 159, 0.459);
+    cursor: pointer;
+}
+
+input[type="color"] {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;    
+  }
+  
+input[type="color"]::-webkit-color-swatch {
+    border-color: black;  
+    border-radius: 50%;
+  }
