@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeJam-Canvas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav--icon_nav">
+                <img src="assets/img/menu.svg" alt="icon">
+            </button>
+            <h1>CodeJam-Canvas</h1>
+        </nav>
+        <menu>
+            <img src="assets/img/menu icon.svg" alt="menu_icon">
+        </menu>
+    </header>
+    <main>
+        <div class="toolbar">
+            <div class="tools panel">
+                <ul>
+                    <li>
+                        <img src="assets/img/Paint bucket.svg" alt="">
+                        <span>Paint bucket</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/Choose_color.svg" alt="">
+                        <span>Choose color</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/Move.svg" alt="">
+                        <span>Move</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/Transform.svg" alt="">
+                        <span>Transform</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="colors panel">
+                <ul>
+                    <li>
+                        <input type="color" id="Current_color" name="Current color" value="#C4C4C4">
+                        <label for="Current color"><span>Current color</span></label>
+                    </li>
+                    <li>
+                        <input type="color" id="Prev_color" name="Prev color" value="#41F795">
+                        <label for="Prev color"><span>Prev color</span></label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="color" name="red" value="#F74141">
+                        <label for="red"><span>red</span></label>
+                    </li>
+                    <li>
+                        <input type="color" name="blue" value="#41B6F7">
+                        <label for="red"><span>blue</span></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="canvas" height="512" width="512"></canvas>
+        <div class="switcher panel">
+            <ul>
+                <li id="matrix4">
+                    <span>4x4</span>
+                </li>
+                <li id="matrix32">
+                    <span>32x32</span>
+                </li>
+                <li id="image">
+                    <span>image</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script type = "module" src="index.js"></script>
+    <script type = "module" src="Arr4x4.js" ></script>
+    <script type = "module" src="Arr32x32.js" ></script>
+</body>
+</html>
