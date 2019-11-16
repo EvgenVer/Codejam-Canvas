@@ -24,10 +24,22 @@
         <div class="toolbar">
             <div class="tools panel">
                 <ul>
-                    <li><img src="assets/img/Paint bucket.svg" alt=""><span>Paint bucket</span></li>
-                    <li><img src="assets/img/Choose_color.svg" alt=""><span>Choose color</span></li>
-                    <li><img src="assets/img/Move.svg" alt=""><span>Move</span></li>
-                    <li><img src="assets/img/Transform.svg" alt=""><span>Transform</span></li>
+                    <li>
+                        <img src="assets/img/Paint bucket.svg" alt="">
+                        <span>Paint bucket</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/Choose_color.svg" alt="">
+                        <span>Choose color</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/Move.svg" alt="">
+                        <span>Move</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/Transform.svg" alt="">
+                        <span>Transform</span>
+                    </li>
                 </ul>
             </div>
             <div class="colors panel">
@@ -53,7 +65,7 @@
                 </ul>
             </div>
         </div>
-        <canvas id="canvas" height="512 px" width="512 px"></canvas>
+        <canvas id="canvas" height="512" width="512"></canvas>
         <div class="switcher panel">
             <ul>
                 <li id="matrix4">
@@ -68,6 +80,8 @@
             </ul>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script type = "module" src="index.js"></script>
+    <script type = "module" src="Arr4x4.js" ></script>
+    <script type = "module" src="Arr32x32.js" ></script>
 </body>
 </html>
